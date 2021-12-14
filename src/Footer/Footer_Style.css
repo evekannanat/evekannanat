@@ -1,0 +1,70 @@
+.Footer {
+    position: absolute;
+    display: flex;
+    top: calc( var(--VP1_Height) + var(--VP2_Height)  + var(--VP3_Height)  + var(--VP4_Height) + var(--VP5_Height));
+    width: 100%;
+    height: 200px;
+    background-color: rgb(163, 80, 196);    
+    background-image: linear-gradient(to bottom right, rgb(165, 117, 184), rgb(91, 153, 155));
+    justify-content: center;
+    overflow: hidden;
+}
+.Logo{
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    z-index: 100000000000000000;
+    text-shadow: rgb(175, 175, 175) 2px 2px 0px;
+    margin-top: 50px;
+}
+.Line{
+    width: 35%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    display: flex;
+    margin-top: 90px;
+}
+.SocialBox_wrap{
+    width: 500px;
+    height: 40px;
+    display: grid;
+    position: absolute;
+    grid-template-columns: 40px 40px 40px 40px;
+    grid-template-rows: 40px;
+    gap: 15px;
+    margin-top: 100px;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.SocialBox{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    display: grid;
+    margin-top: 8%;
+    background-color: aquamarine;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1000px) {
+    .Logo{
+        margin-top: 20px;
+    }
+    .Footer{
+        height: 150px;
+    }
+    .Line{
+        margin-top: 60px;
+    }
+    .SocialBox{
+        margin-top: -20px;       
+        margin-left: -20px;
+    }
+}

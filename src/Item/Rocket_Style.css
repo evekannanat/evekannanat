@@ -1,0 +1,128 @@
+.Rocket{
+    top: 80px;
+    position: absolute;
+    display: flex;
+    margin-left: 50%;
+    transform: translate(-50%);
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    border: rgba(0, 0, 0, 0.959) 1px solid none;
+    justify-content: center;
+    z-index: 200;
+}
+.Rocket_Head1{  
+    margin-top: 40px;  
+    position: absolute;
+    display: flex;
+    width: 35px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 100%;
+    margin-left: -35px;
+}
+.Rocket_Head2{  
+    margin-top: 40px;  
+    position: absolute;
+    display: flex;
+    width: 35px;
+    height: 200px;
+    background-color: rgb(228, 228, 228);
+    border-top-right-radius: 100%;
+    margin-left: 35px;
+}
+.Rocket_Body1{
+    position: absolute;
+    display: flex;
+    margin-top: 80px;
+    height: 200px;
+    width: 40px;
+    background-color: rgb(87, 209, 178);
+    border-radius : 50% 0% 0% 50%;
+    z-index: 100;
+    margin-left: -40px;
+}
+.Rocket_Body2 {
+    margin-top: 80px;
+    height: 200px;
+    width: 40px;
+    background-color: rgb(62, 153, 118);
+    border-radius : 0% 50% 50% 0%;
+    z-index: 100;
+    margin-left: 40px;
+}
+.Wing1 {
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 80px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 100% 0% 0% 100% / 100% 0% 100% 0% ;
+    margin-top:190px;
+    margin-left: -60px;
+}
+.Wing2 {
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 80px;
+    background-color: rgb(97, 96, 96);
+    border-radius: 0% 100% 0% 100% / 100% 100% 0% 0% ;
+    margin-top:190px;
+    margin-left: 60px;
+}
+
+
+.Frame_container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 270px;
+    z-index: 1;
+}
+.Frame {
+    position: absolute;
+    display: flex;
+}
+.Frame1{
+    background-color:  rgb(87, 189, 163);
+    width: 60PX;
+    height: 60PX;
+    border-radius: 50% 0% 50% 50% ;
+    transform: rotate(135deg);
+}
+.Frame2{
+    background-color:  rgb(92, 221, 189);
+    width: 50PX;
+    height: 50PX;
+    border-radius: 50% 0% 50% 50% ;
+    transform: rotate(135deg);
+}
+.Frame3{
+    background-color:  rgb(129, 224, 200);
+    width: 40PX;
+    height: 40PX;
+    border-radius: 50% 0% 50% 50% ;
+    transform: rotate(135deg);
+}
+.Frame4{
+    background-color: rgb(255, 255, 255);
+    width: 30PX;
+    height: 30PX;
+    border-radius: 50% 0% 50% 50% ;
+    transform: rotate(135deg);
+}
+.Rocket_window{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(180, 180, 180);
+    background-image: linear-gradient(rgb(168, 166, 166), rgb(255, 255, 255));
+    border-radius: 50%;
+    margin-top: 120px;
+    z-index: 300;
+}

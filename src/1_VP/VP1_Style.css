@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+:root {
+    --VP1_Height: 800px;
+}
+.VP1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: var(--VP1_Height);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background-color: rgb(163, 80, 196);    
+    background-image: linear-gradient(to bottom right, rgb(165, 117, 184), rgb(91, 153, 155));
+    overflow: hidden; 
+}
+.VP1 h1 {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: calc(50% - 400px);
+    margin-top: 100px;
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+}
+.VP1 h2 {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: calc(50% - 400px);
+    margin-top:200px;
+    font-family: 'Outfit', sans-serif;
+}
+.VP1 h3 {
+    position: absolute;
+    font-size: 180px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: calc(50% - 400px);
+    margin-top: 270px;
+    font-family: 'Outfit', sans-serif;
+}
+.Stair_wrap{
+    margin-left: 65%;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    width: 550px;
+    height: 350px;
+    border: rgb(151, 79, 165) 1px solid none;
+    z-index: 10;
+    transform: rotate(10deg);
+}
+.Stair_Layer1{
+    position: absolute;
+    transform: rotate(4deg);
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.Stair_Layer2{
+    position: absolute;
+    transform: rotate(5deg);
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.Stair_Layer3{
+    position: absolute;
+    transform: rotate(6deg);
+    margin-top: 150px;
+    margin-left: 150px;
+}
+.Stair_Layer4{
+    position: absolute;
+    transform: rotate(7deg);
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.Stair_Layer5{
+    position: absolute;
+    transform: rotate(8deg);
+    margin-top: 250px;
+    margin-left: 250px;
+}
+.Stair_Layer6{
+    position: absolute;
+    transform: rotate(9deg);
+    margin-top: 300px;
+    margin-left: 300px;
+}
+.Rocket_wrap{
+    position: absolute;
+    display: flex;
+    margin-left: calc(50% + 100px);
+    transform: translate(-50%);
+    z-index: 100000;
+    margin-top: 10px;
+}
+.Cloud_wrap {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black none;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    z-index: 100000;
+}
+@media only screen and (max-width: 600px) {
+    :root {
+        --VP1_Height: 600px;
+    }
+    .Moon_wrap{
+        display: none;
+    }
+    .Cloud_wrap{
+        display: none;
+    }
+    .Stair_wrap{
+        margin-left: 30%;
+    }
+    .VP1 h1 {
+        font-size: 50px;   
+        margin-top: 50px;
+        margin-left: 50%;
+        transform: translate(-30%);
+    }
+    .VP1 h2 {
+        margin-top: 100px;
+        font-size: 50px;   
+        margin-left: 50%;    
+        transform: translate(-50%);  
+    }
+    .VP1 h3 {
+        margin-top: 150px;
+        font-size: 50px;    
+        margin-left: 50%;    
+        transform: translate(-50%); 
+    }
+    .Rocket_wrap{
+        display: none;
+    }
+}

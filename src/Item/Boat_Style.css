@@ -1,0 +1,66 @@
+.Boat{
+    top: 300px;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    border: violet 1px solid none;
+    width: 600px;
+    height: 200px;
+    z-index: 6;
+}
+.B1{
+    position: absolute;
+    margin-left: 0;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(196, 195, 195);    
+    clip-path: polygon(0 59%, 100% 55%, 100% 100%, 70% 100%);
+    z-index: 10;    
+}
+.B2{
+    position: absolute;
+    margin-left: 300px;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(163, 163, 163);    
+    clip-path: polygon(0 55%, 100% 59%, 51% 100%, 0 100%);
+    z-index: 10;
+}
+.B3{
+    position: absolute;
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(100% 0, 49% 100%, 100% 100%);
+    background-color: turquoise;
+    z-index: 40;
+}
+.B4{
+    position: absolute;
+    margin-left: 300px;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(0 0, 0 100%, 49% 100%);
+    background-color: rgb(60, 202, 188);
+    z-index: 40;
+
+}
+.B5{
+    position: absolute;
+    margin-left: 0;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(223, 221, 221);    
+    clip-path: polygon(0 59%, 100% 73%, 100% 100%, 63% 100%);
+    z-index: 50;
+}
+.B6{
+    position: absolute;
+    margin-left: 300px;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(207, 207, 207);    
+    clip-path: polygon(0 73%, 100% 59%, 51% 100%, 0 100%);
+    z-index: 50;
+}

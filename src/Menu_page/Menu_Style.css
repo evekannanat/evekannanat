@@ -1,40 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.Logo{
-    position: absolute;
-    display: flex;
-    font-size: 30px;
-    color: #fff;
-    z-index: 100000000000000000;
-    margin-top: 2%;
-    margin-left: 2%;
-    text-shadow: rgb(175, 175, 175) 2px 2px 0px;
-}
-.Menubutton{
-    position: absolute;
-    display: flex;
-    right: 50px;
-    top: 30px;
-}
-.Open{
-    position: absolute;
-    display: flex;
-    z-index: 10000000000;
-    background-color: transparent;
-    font-size: 30px;
-    color: #fff;
-    border: none;
-    right: 2%;
-    top:2%;
-    cursor: pointer;
-    outline: none;
-}
-
 .Menu{
     position: absolute;
     display: flex;
@@ -67,7 +31,7 @@
     z-index: 999999999;
     opacity: 1;
     border-radius: 50%;
-    box-shadow: 10px 10px 20px rgb(212, 247, 238), inset 30px 30px 50px rgb(191, 177, 196);
+    box-shadow: 10px 10px 20px rgb(106, 248, 213), inset 30px 30px 50px rgb(191, 177, 196);
 }
 .Menu li {
     text-decoration: none;
@@ -75,6 +39,7 @@
     font-size: 60px;
     text-transform: uppercase;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: rgb(70, 224, 186);
     font-family: 'Outfit', sans-serif;
+    text-shadow: 2px 2px 10px rgb(117, 216, 208);
 }

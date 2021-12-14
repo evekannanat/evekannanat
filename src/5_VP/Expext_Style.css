@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.Expect_container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 60px 60px;
+    gap: 5px;
+    border: black 1px solid none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    z-index: 100000;
+}
+label {
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 50px;
+    height: 50px;    
+    
+}
+input[type="checkbox"] {
+    display: none;
+}
+span {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: rgb(120, 126, 129); 
+    border-radius: 50px;
+    height: 40px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;    
+    box-shadow: inset rgb(170, 170, 170) 1px 1px 5px;
+}
+.Expect_container div label input[type="checkbox"]:checked ~ span {
+    background-color: rgb(91, 153, 155) ;
+    color: #fff;
+    box-shadow: rgb(91, 153, 155) 1px 1px 5px;
+}
+@media only screen and (max-width: 1000px){
+    .Expect_container{
+        position: relative;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 60px 60px  60px;
+        gap: 5px;
+        border: black 1px solid none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        z-index: 100000;
+    }
+}

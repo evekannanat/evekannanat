@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+:root{
+    --VP3_Height: 700px;
+}
+.VP3 {
+    position: absolute;
+    top: calc( var(--VP1_Height) + var(--VP2_Height));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: var(--VP3_Height);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    background-color:rgb(255, 255, 255);  
+    overflow: hidden;
+}
+.VP3::before{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    content: "";
+    width: 50%;
+    height:1px;    
+    background-color: rgb(221, 221, 221);    
+}
+.Text{
+    width: 700px;
+    height: 600px;
+    text-align: center;
+    border: 1px solid black none;
+    margin-top: 80px;
+}
+.VP3 h1{
+    font-size: 100px;
+}
+.VP3 h2{
+    margin-top: 10px;
+}
+.VP3 p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.VP3 button{
+    outline: none;
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 255, 191);
+    background-color: white;
+    cursor: pointer;
+}
+.Boat_wrap{
+    border: black 1px solid none;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 45%;
+}
+@media only screen and (max-width: 1000px) {
+    :root{
+        --VP3_Height: 600px;
+    }
+    .VP3 h1{
+        font-size: 50px;
+    }
+}

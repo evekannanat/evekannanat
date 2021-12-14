@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --VP5_Height: 550px;
+}
+.VP5 {
+    position: absolute;
+    top: calc( var(--VP1_Height) + var(--VP2_Height)  + var(--VP3_Height) + var(--VP4_Height));
+    width: 100%;
+    height: var(--VP5_Height);
+    background-color:rgb(241, 241, 241);
+}
+.Question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.P1_wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.P1 {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.Email{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.Email_Box {
+    width: 450px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+    padding-left: 20px;
+    text-decoration: none;
+    outline: none;
+    white-space: nowrap;
+    font-size: 15px;
+}
+.Button_wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+button[type="submit"]{
+    margin-top: 20px;
+    display: flex;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(91, 153, 155);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1000px){
+    :root{
+        --VP5_Height: 650px;
+    }
+    .Email_Box{
+        width: 400px;
+
+    }
+}

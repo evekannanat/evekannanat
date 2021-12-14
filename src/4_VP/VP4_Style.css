@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --VP4_Height: 600px;
+}
+.VP4 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: var(--VP4_Height);
+    background-color: rgb(255, 255, 255);
+    top: calc( var(--VP1_Height) + var(--VP2_Height)  + var(--VP3_Height) );
+    display: flex;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.VP4::before{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    content: "";
+    width: 50%;
+    height:1px;    
+    background-color: rgb(221, 221, 221);    
+}
+.VP4 h1 {
+    position: absolute;
+    display: flex;
+    margin-top: 100px;
+    font-size: 30px;
+} 
+.VP4 h2 {
+    position: absolute;
+    display: flex;
+    margin-top: 150px;
+    font-size: 25px;
+} 
+.Process_container{
+    position: absolute;
+    display: grid;
+    border: black 1px solid none;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 300px;
+    margin-top: 250px;
+    gap: 35px;
+}
+.Box {
+    border: rgb(197, 197, 197) 1px solid none;
+    border-radius: 20px 0 0 0;
+}
+.VP4 h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle_frame {
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 90px;
+    height: 90px;
+    border: rgb(0, 255, 191) 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+}
+.Textbox {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: black;
+}
+@media only screen and (max-width: 1000px) {
+    :root{
+        --VP4_Height: 700px;
+    }
+    .VP4 h1 {
+        font-size: 30px;
+    } 
+    .VP4 h2 {
+        font-size: 25px;
+        text-align: center;
+    } 
+    .Process_container{
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 150px 150px ;
+        margin-top: 250px;
+    }
+    .circle_frame {
+        margin-left: 50%;
+        transform: translate(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+    }
+    .Textbox {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
